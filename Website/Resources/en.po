@@ -1,0 +1,6 @@
+﻿#: Views/Shared/_Layout.cshtml
+msgid "bootstrapRtlCss"
+msgstr "<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />"
+
+msgid "bootstrapRtlJs"
+msgstr "<script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>"

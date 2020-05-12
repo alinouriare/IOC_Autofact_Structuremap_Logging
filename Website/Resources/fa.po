@@ -1,0 +1,57 @@
+﻿
+#: Views/Home/Index.cshtml:12
+
+msgid "Hello world!"
+msgstr "سلام!"
+
+msgid "Test 1"
+msgstr "تست شماره یک"
+
+msgid "There is one item."
+msgid "Welcome"
+msgstr "خوش آمدید"
+
+
+msgid "building Web apps with "
+msgstr "ساخت برنامه های وب با "
+
+msgid "Learn about"
+msgstr "یاد بگیرید درمورد "
+
+
+msgid "There is one item."
+msgid_plural "There are {0} items."
+msgstr[0] "یک آیتم وجود دارد."
+msgstr[1] "بببب {0} ااااا."
+
+#: Views/Home/About.cshtml:
+msgid "About"
+msgstr "درباره ما"
+
+#: Views/Shared/_Layout.cshtml
+
+msgid "dir"
+msgstr "rtl"
+
+msgid "Home"
+msgstr "خانه"
+
+msgid "Website"
+msgstr "وب سایت"
+
+msgid "Privacy"
+msgstr "حریم خصوصی"
+
+msgid "bootstrapRtlCss"
+msgstr "<link href="lib/bootstrap-4.2.1-rtl/dist/css/rtl/bootstrap.css" rel="stylesheet" />"
+
+msgid "bootstrapRtlJs"
+msgstr "<script src="lib/bootstrap-4.2.1-rtl/dist/js/bootstrap.bundle.js"></script>"
+
+
+
+#: Views/Shared/_SelectLanguagePartial.cshtml.cshtml
+
+msgid "Language:"
+msgstr "زبان:"
+

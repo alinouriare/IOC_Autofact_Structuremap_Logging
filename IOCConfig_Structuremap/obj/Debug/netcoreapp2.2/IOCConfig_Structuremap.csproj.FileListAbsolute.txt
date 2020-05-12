@@ -1,0 +1,8 @@
+F:\Projects\PartonetTehranProjects\IOCConfig_Structuremap\bin\Debug\netcoreapp2.2\IOCConfig_Structuremap.deps.json
+F:\Projects\PartonetTehranProjects\IOCConfig_Structuremap\bin\Debug\netcoreapp2.2\IOCConfig_Structuremap.dll
+F:\Projects\PartonetTehranProjects\IOCConfig_Structuremap\obj\Debug\netcoreapp2.2\IOCConfig_Structuremap.AssemblyInfoInputs.cache
+F:\Projects\PartonetTehranProjects\IOCConfig_Structuremap\obj\Debug\netcoreapp2.2\IOCConfig_Structuremap.AssemblyInfo.cs
+F:\Projects\PartonetTehranProjects\IOCConfig_Structuremap\bin\Debug\netcoreapp2.2\IOCConfig_Structuremap.pdb
+F:\Projects\PartonetTehranProjects\IOCConfig_Structuremap\obj\Debug\netcoreapp2.2\IOCConfig_Structuremap.dll
+F:\Projects\PartonetTehranProjects\IOCConfig_Structuremap\obj\Debug\netcoreapp2.2\IOCConfig_Structuremap.pdb
+F:\Projects\PartonetTehranProjects\IOCConfig_Structuremap\obj\Debug\netcoreapp2.2\IOCConfig_Structuremap.csprojAssemblyReference.cache

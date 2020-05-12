@@ -1,0 +1,47 @@
+﻿@model Website.Models.Form1VM
+@{
+    ViewData["Title"] = "form1";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <h1>form1</h1>
+    <form asp-controller="Home" asp-action="Form1" method="post">
+
+
+
+
+
+        <div>
+            <label>Name:</label>
+            <input asp-for="Name">
+
+        </div>
+        <div>
+            <label>Last Name:</label>
+            <input asp-for="LastName">
+
+        </div>
+        <div>
+            <label asp-for="CaptchaCode">Retype the code from the picture:</label>
+            <captcha id="ExampleCaptcha"  user-input-id="CaptchaCode" />
+        </div>
+     
+            <input asp-for="CaptchaCode" />
+            <button type="submit">Register</button>
+
+            <div>
+            <span asp-validation-for="CaptchaCode"></span>
+
+            </div>
+           
+
+     
+    </form>
+</body>
+</html>
+

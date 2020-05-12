@@ -1,0 +1,7 @@
+Create Table Store Data:
+Query--3
+
+Add Service in IServiceCollection to File Startup.cs
+
+services.AddTransient(typeof(ISerilog<>), typeof(Serilog<>));
+

@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@using System.Globalization
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Localization
+@inject IViewLocalizer  localizer
+@inject IStringLocalizer<Website.Base.ShareResource> SharedLocalizer
+
+<p>@SharedLocalizer["Hello world!"]</p>
+
+<br />
+<p>@SharedLocalizer["Test1"]</p>
+<p>@localizer["Test1"]</p>
+<br />
+
+<p>@SharedLocalizer.Plural(1, "There is one item.", "There are {0} items.")</p>
+@*<p>@Localizer.Plural(2, "There is one item.", "There are {0} items.")</p>
+    <p>@Localizer.Plural(5, "There is one item.", "There are {0} items.")</p>*@
+
+<div class="text-center">
+    <h1 class="display-4">@SharedLocalizer["Welcome"]</h1>
+    <p>@SharedLocalizer["Learn about"] <a href="https://docs.microsoft.com/aspnet/core">@SharedLocalizer["building Web apps with "]ASP.NET Core</a>.</p>
+</div>
+
+<ul class="onhover-show-div">
+    <li><a href="@Url.Action("ChangeCulture","Home",new {culture = "en" })">english</a></li>
+    <li><a href="@Url.Action("ChangeCulture","Home",new {culture = "de" })">Deutsch</a></li>
+    <li><a href="@Url.Action("ChangeCulture","Home",new {culture = "fr" })">French</a></li>
+    <li><a href="@Url.Action("ChangeCulture","Home",new {culture = "ar" })">Arabic</a></li>
+    <li><a href="@Url.Action("ChangeCulture","Home",new {culture = "fa" })">Persian</a></li>
+</ul>

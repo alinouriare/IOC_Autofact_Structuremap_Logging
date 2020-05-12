@@ -1,0 +1,20 @@
+﻿
+#: وقتی از دستور زیر استفاده می کنیم یعنی فقط در این مسیر باید ترجمه شود و در مسیرهای دیگر این ترجمه براش اعمال نشود
+
+#: Views/Shared/_Layout.cshtml
+msgid "bootstrapRtlCss"
+msgstr "<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />"
+
+msgid "bootstrapRtlJs"
+msgstr "<script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>"
+
+
+msgctxt "Views.Home.index"
+msgid "Hello world!"
+msgstr "Ahoj světe!!"
+
+msgid "There is one item."
+msgid_plural "There are {0} items."
+msgstr[0] "Existuje jedna položka."
+msgstr[1] "Existují {0} položky."
+msgstr[2] "Existuje {0} položek."

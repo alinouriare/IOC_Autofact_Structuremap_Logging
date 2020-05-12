@@ -1,0 +1,67 @@
+Just one 1Mthod Use in Project
+
+Best NlogCodeBase : Config Nlog Code C# not Use Xml Config File nlog.config and Change Settings Program.cs
+
+Create Table Store Data:
+Query--2
+
+
+
+Add Service in IServiceCollection to File Startup.cs
+
+
+  services.AddTransient(typeof(INlogCodeBase<>), typeof(NlogCodeBase<>));
+
+
+
+
+Nlog : Config Nlog Xml in File nlog.config
+
+Create Table Store Data:
+Query--1
+
+
+Change Settings Program.cs 
+
+     var logger = NLogBuilder.ConfigureNLog("nlog.config").GetCurrentClassLogger();
+            try
+            {
+                logger.Debug("Init main");
+                CreateWebHostBuilder(args).Build().Run();
+            }
+            catch (Exception e)
+            {
+                logger.Error(e, "Program stopped because of an exception.");
+                throw;
+            }
+            finally
+            {
+                LogManager.Shutdown();
+            }
+        }
+
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+            WebHost.CreateDefaultBuilder(args)
+                .UseStartup<Startup>()
+                .ConfigureLogging(builder =>
+                {
+                    builder.ClearProviders();
+                    builder.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace);
+                }).UseNLog();
+
+
+
+
+Add Service in IServiceCollection to File Startup.cs
+
+
+ services.AddTransient(typeof(INlog<>), typeof(Nlog<>));
+
+ And Nlog Config File(nlog.config) Add Project
+
+
+Path in Config File Log:
+c:\Nlog\temp\internal-nlog.txt -- Log Nlog
+c:\Nlog\nlog-all-${shortdate}.log --Log Project
+
+
